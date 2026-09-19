@@ -1,0 +1,38 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+artifacts/
+publish/
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userprefs
+*.DotSettings.user
+
+# Tests and coverage
+TestResults/
+coverage/
+*.trx
+*.coverage
+coverage*.xml
+
+# Local data
+*.db
+*.db-shm
+*.db-wal
+*.log
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
