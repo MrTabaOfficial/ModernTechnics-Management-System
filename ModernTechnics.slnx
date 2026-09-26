@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ModernTechnics.Core/ModernTechnics.Core.csproj" />
+    <Project Path="src/ModernTechnics.Infrastructure/ModernTechnics.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ModernTechnics.Tests/ModernTechnics.Tests.csproj" />
+  </Folder>
+</Solution>
