@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="src/ModernTechnics.App/ModernTechnics.App.csproj" />
     <Project Path="src/ModernTechnics.Core/ModernTechnics.Core.csproj" />
     <Project Path="src/ModernTechnics.Infrastructure/ModernTechnics.Infrastructure.csproj" />
   </Folder>

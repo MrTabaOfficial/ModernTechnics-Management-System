@@ -56,9 +56,9 @@ public static class DemoData
 
         var products = new[]
         {
-            Product("Galaxy S24 Ultra 256GB", "Samsung", 2024, 3499m, 18, 6),
-            Product("iPhone 15 Pro 128GB", "Apple", 2023, 3799m, 12, 4),
-            Product("MacBook Air 13\" M3", "Apple", 2024, 4299m, 7, 3),
+            Product("Galaxy S24 Ultra 256GB", "Samsung", 2024, 3499m, 18, 8),
+            Product("iPhone 15 Pro 128GB", "Apple", 2023, 3799m, 12, 7),
+            Product("MacBook Air 13\" M3", "Apple", 2024, 4299m, 7, 6),
             Product("ThinkPad X1 Carbon Gen 12", "Lenovo", 2024, 5899m, 5, 2),
             Product("PlayStation 5 Slim", "Sony", 2023, 1899m, 14, 9),
             Product("WH-1000XM5 Headphones", "Sony", 2022, 999m, 22, 11),
@@ -67,7 +67,7 @@ public static class DemoData
             Product("ROG Strix G16 Laptop", "ASUS", 2024, 4999m, 4, 1),
             Product("AirPods Pro 2", "Apple", 2023, 799m, 25, 12),
             Product("Galaxy Tab S9 FE", "Samsung", 2023, 1399m, 9, 0),
-            Product("Pixel 8a 128GB", "Google", 2024, 1699m, 8, 5),
+            Product("Pixel 8a 128GB", "Google", 2024, 1699m, 8, 9),
         };
         db.Products.AddRange(products);
 
@@ -78,14 +78,17 @@ public static class DemoData
             (3, 1, 4, 1), (3, 5, -1, 2), (4, 9, 5, 2), (4, 11, 0, 1), (5, 2, 1, 1), (5, 7, -1, 3),
             (6, 6, 3, 1), (6, 4, -1, 1), (9, 3, 4, 1), (12, 0, 2, 1), (16, 8, 5, 1), (21, 9, -1, 2),
         ];
-        db.Orders.AddRange(history.Select(sale => new Order
-        {
-            Product = products[sale.Product],
-            Customer = sale.Customer < 0 ? null : customers[sale.Customer],
-            Quantity = sale.Quantity,
-            UnitPrice = products[sale.Product].Price,
-            PlacedAtUtc = utcNow.AddDays(-sale.DaysAgo).AddMinutes(-37 * (sale.Product + 1)),
-        }));
+        // Inserted oldest first, so order numbers rise with time.
+        db.Orders.AddRange(history
+            .Select(sale => new Order
+            {
+                Product = products[sale.Product],
+                Customer = sale.Customer < 0 ? null : customers[sale.Customer],
+                Quantity = sale.Quantity,
+                UnitPrice = products[sale.Product].Price,
+                PlacedAtUtc = utcNow.AddDays(-sale.DaysAgo).AddMinutes(-37 * (sale.Product + 1)),
+            })
+            .OrderBy(order => order.PlacedAtUtc));
 
         db.JobApplications.AddRange(
             Application("Giga", "Tabatadze", 2001, 5, 6, "+995 599 70 80 90", sales, ApplicationStatus.New, utcNow.AddDays(-1),

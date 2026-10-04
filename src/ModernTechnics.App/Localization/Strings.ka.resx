@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="App.Name" xml:space="preserve">
+    <value>ModernTechnics</value>
+  </data>
+  <data name="App.Subtitle" xml:space="preserve">
+    <value>მაღაზიის მართვა</value>
+  </data>
+  <data name="App.Tagline" xml:space="preserve">
+    <value>ტექნიკის მაღაზიის გუნდი, მარაგი და
+გაყიდვები ერთ სივრცეში.</value>
+  </data>
+  <data name="App.Footer" xml:space="preserve">
+    <value>სადემონსტრაციო ვერსია · ლოკალური მონაცემები</value>
+  </data>
+  <data name="App.DatabaseError" xml:space="preserve">
+    <value>მონაცემთა ბაზის გახსნა ვერ მოხერხდა: {0}
+
+{1}</value>
+  </data>
+  <data name="Login.Title" xml:space="preserve">
+    <value>ავტორიზაცია</value>
+  </data>
+  <data name="Login.Subtitle" xml:space="preserve">
+    <value>შეიყვანეთ სამსახურის ელ-ფოსტა.</value>
+  </data>
+  <data name="Login.SignIn" xml:space="preserve">
+    <value>შესვლა</value>
+  </data>
+  <data name="Login.Missing" xml:space="preserve">
+    <value>გთხოვთ შეავსოთ ელ-ფოსტა და პაროლი.</value>
+  </data>
+  <data name="Login.Demo" xml:space="preserve">
+    <value>სადემონსტრაციო ანგარიშები · პაროლი {0}</value>
+  </data>
+  <data name="Login.Feature1" xml:space="preserve">
+    <value>როლებზე დაფუძნებული წვდომა</value>
+  </data>
+  <data name="Login.Feature2" xml:space="preserve">
+    <value>საწყობისა და მაღაზიის მარაგი</value>
+  </data>
+  <data name="Login.Feature3" xml:space="preserve">
+    <value>გაყიდვები და შემოსავალი</value>
+  </data>
+  <data name="Login.Feature4" xml:space="preserve">
+    <value>ხელფასები და ვაკანსიები</value>
+  </data>
+  <data name="Module.Dashboard" xml:space="preserve">
+    <value>მთავარი</value>
+  </data>
+  <data name="Module.Dashboard.Hint" xml:space="preserve">
+    <value>მაღაზიის დღევანდელი მდგომარეობა.</value>
+  </data>
+  <data name="Module.Employees" xml:space="preserve">
+    <value>თანამშრომლები</value>
+  </data>
+  <data name="Module.Employees.Hint" xml:space="preserve">
+    <value>გუნდის წევრები და მათი საკონტაქტო მონაცემები.</value>
+  </data>
+  <data name="Module.Payroll" xml:space="preserve">
+    <value>ბუღალტერია</value>
+  </data>
+  <data name="Module.Payroll.Hint" xml:space="preserve">
+    <value>თანამშრომლების ყოველთვიური ხელფასები.</value>
+  </data>
+  <data name="Module.Customers" xml:space="preserve">
+    <value>მომხმარებლები</value>
+  </data>
+  <data name="Module.Customers.Hint" xml:space="preserve">
+    <value>რეგისტრირებული მყიდველები.</value>
+  </data>
+  <data name="Module.Applications" xml:space="preserve">
+    <value>ვაკანსიები</value>
+  </data>
+  <data name="Module.Applications.Hint" xml:space="preserve">
+    <value>კანდიდატები და შერჩევის ეტაპები.</value>
+  </data>
+  <data name="Module.Warehouse" xml:space="preserve">
+    <value>საწყობი</value>
+  </data>
+  <data name="Module.Warehouse.Hint" xml:space="preserve">
+    <value>პროდუქციის კატალოგი, მიღება და მაღაზიაში გადატანა.</value>
+  </data>
+  <data name="Module.Store" xml:space="preserve">
+    <value>მაღაზია</value>
+  </data>
+  <data name="Module.Store.Hint" xml:space="preserve">
+    <value>რა არის ამჟამად დახლზე. გასაყიდად აირჩიეთ პროდუქტი.</value>
+  </data>
+  <data name="Module.Orders" xml:space="preserve">
+    <value>შეკვეთები</value>
+  </data>
+  <data name="Module.Orders.Hint" xml:space="preserve">
+    <value>ყველა დასრულებული გაყიდვა, ახლიდან ძველისკენ.</value>
+  </data>
+  <data name="Module.Users" xml:space="preserve">
+    <value>ანგარიშები</value>
+  </data>
+  <data name="Module.Users.Hint" xml:space="preserve">
+    <value>ვის შეუძლია შესვლა და რაზე აქვს წვდომა.</value>
+  </data>
+  <data name="Action.Save" xml:space="preserve">
+    <value>შენახვა</value>
+  </data>
+  <data name="Action.Cancel" xml:space="preserve">
+    <value>გაუქმება</value>
+  </data>
+  <data name="Action.Close" xml:space="preserve">
+    <value>დახურვა</value>
+  </data>
+  <data name="Action.Edit" xml:space="preserve">
+    <value>შეცვლა</value>
+  </data>
+  <data name="Action.Delete" xml:space="preserve">
+    <value>წაშლა</value>
+  </data>
+  <data name="Action.SignOut" xml:space="preserve">
+    <value>ანგარიშის დატოვება</value>
+  </data>
+  <data name="List.Search" xml:space="preserve">
+    <value>ძებნა…</value>
+  </data>
+  <data name="List.Count" xml:space="preserve">
+    <value>{0} ჩანაწერი</value>
+  </data>
+  <data name="List.Empty" xml:space="preserve">
+    <value>ჩანაწერები არ მოიძებნა.</value>
+  </data>
+  <data name="Toast.Saved" xml:space="preserve">
+    <value>მონაცემები წარმატებით შეინახა</value>
+  </data>
+  <data name="Toast.Deleted" xml:space="preserve">
+    <value>ჩანაწერი წაიშალა</value>
+  </data>
+  <data name="Toast.Received" xml:space="preserve">
+    <value>მიღებულია {0} × {1}</value>
+  </data>
+  <data name="Toast.Transferred" xml:space="preserve">
+    <value>{0} × {1} გადატანილია მაღაზიაში</value>
+  </data>
+  <data name="Toast.Sold" xml:space="preserve">
+    <value>გაიყიდა {0} × {1} · {2}</value>
+  </data>
+  <data name="Confirm.Delete" xml:space="preserve">
+    <value>ნამდვილად გნებავთ წაშლა: {0}? მოქმედების გაუქმება შეუძლებელია.</value>
+  </data>
+  <data name="Employees.Add" xml:space="preserve">
+    <value>თანამშრომლის დამატება</value>
+  </data>
+  <data name="Employees.Edit" xml:space="preserve">
+    <value>თანამშრომლის რედაქტირება</value>
+  </data>
+  <data name="Customers.Add" xml:space="preserve">
+    <value>მომხმარებლის დამატება</value>
+  </data>
+  <data name="Customers.Edit" xml:space="preserve">
+    <value>მომხმარებლის რედაქტირება</value>
+  </data>
+  <data name="Applications.Add" xml:space="preserve">
+    <value>ახალი განაცხადი</value>
+  </data>
+  <data name="Applications.View" xml:space="preserve">
+    <value>წერილის ნახვა</value>
+  </data>
+  <data name="Applications.SetStatus" xml:space="preserve">
+    <value>სტატუსის შეცვლა</value>
+  </data>
+  <data name="Applications.Summary" xml:space="preserve">
+    <value>{0} · {1}
+გამოგზავნილია {2} · {3}</value>
+  </data>
+  <data name="Applications.StatusFor" xml:space="preserve">
+    <value>{0} · {1}</value>
+  </data>
+  <data name="Warehouse.Add" xml:space="preserve">
+    <value>პროდუქტის დამატება</value>
+  </data>
+  <data name="Warehouse.Edit" xml:space="preserve">
+    <value>პროდუქტის რედაქტირება</value>
+  </data>
+  <data name="Warehouse.Receive" xml:space="preserve">
+    <value>მარაგის მიღება</value>
+  </data>
+  <data name="Warehouse.Transfer" xml:space="preserve">
+    <value>გადატანა</value>
+  </data>
+  <data name="Warehouse.ReceiveHint" xml:space="preserve">
+    <value>{0}
+ამჟამად საწყობშია {1}.</value>
+  </data>
+  <data name="Warehouse.TransferHint" xml:space="preserve">
+    <value>{0}
+საწყობში {1} · მაღაზიაში {2}.</value>
+  </data>
+  <data name="Warehouse.Footer" xml:space="preserve">
+    <value>{0} პროდუქტი · საწყობში {1} ერთეული · მაღაზიაში {2}</value>
+  </data>
+  <data name="Store.Sell" xml:space="preserve">
+    <value>გაყიდვა</value>
+  </data>
+  <data name="Store.Confirm" xml:space="preserve">
+    <value>გაყიდვის დასრულება</value>
+  </data>
+  <data name="Store.SellHint" xml:space="preserve">
+    <value>{0}
+ფასი {1} · დახლზეა {2}.</value>
+  </data>
+  <data name="Store.WalkIn" xml:space="preserve">
+    <value>დაურეგისტრირებელი მყიდველი</value>
+  </data>
+  <data name="Store.OnShelf" xml:space="preserve">
+    <value>მაღაზიაში</value>
+  </data>
+  <data name="Store.Availability" xml:space="preserve">
+    <value>ხელმისაწვდომობა</value>
+  </data>
+  <data name="Store.SoldOut" xml:space="preserve">
+    <value>ამოიწურა</value>
+  </data>
+  <data name="Store.Low" xml:space="preserve">
+    <value>იწურება</value>
+  </data>
+  <data name="Store.InStock" xml:space="preserve">
+    <value>მარაგშია</value>
+  </data>
+  <data name="Store.Footer" xml:space="preserve">
+    <value>{0} პროდუქტი · ამოწურულია {1}</value>
+  </data>
+  <data name="Orders.Footer" xml:space="preserve">
+    <value>{0} შეკვეთა · {1} ერთეული · {2}</value>
+  </data>
+  <data name="Payroll.Annual" xml:space="preserve">
+    <value>წლიური</value>
+  </data>
+  <data name="Payroll.ChangeSalary" xml:space="preserve">
+    <value>ხელფასის შეცვლა</value>
+  </data>
+  <data name="Payroll.Footer" xml:space="preserve">
+    <value>{0} თანამშრომელი · თვეში {1}</value>
+  </data>
+  <data name="Payroll.Current" xml:space="preserve">
+    <value>{0} · {1}
+მიმდინარე ხელფასი {2}</value>
+  </data>
+  <data name="Users.Add" xml:space="preserve">
+    <value>ანგარიშის დამატება</value>
+  </data>
+  <data name="Users.Edit" xml:space="preserve">
+    <value>ანგარიშის რედაქტირება</value>
+  </data>
+  <data name="Users.NewPassword" xml:space="preserve">
+    <value>ახალი პაროლი (ცარიელი — უცვლელი რჩება)</value>
+  </data>
+  <data name="Users.Access" xml:space="preserve">
+    <value>წვდომა</value>
+  </data>
+  <data name="Users.AllModules" xml:space="preserve">
+    <value>ყველა მოდული</value>
+  </data>
+  <data name="Dashboard.Employees" xml:space="preserve">
+    <value>თანამშრომლები</value>
+  </data>
+  <data name="Dashboard.Payroll" xml:space="preserve">
+    <value>სახელფასო ფონდი</value>
+  </data>
+  <data name="Dashboard.Revenue" xml:space="preserve">
+    <value>შემოსავალი · 30 დღე</value>
+  </data>
+  <data name="Dashboard.Stock" xml:space="preserve">
+    <value>მარაგი (ერთეული)</value>
+  </data>
+  <data name="Dashboard.RevenueChart" xml:space="preserve">
+    <value>შემოსავალი · ბოლო 7 დღე</value>
+  </data>
+  <data name="Dashboard.Headcount" xml:space="preserve">
+    <value>გუნდი თანამდებობების მიხედვით</value>
+  </data>
+  <data name="Dashboard.LowStock" xml:space="preserve">
+    <value>მაღაზიაში იწურება ({0} ან ნაკლები)</value>
+  </data>
+  <data name="Dashboard.Advice" xml:space="preserve">
+    <value>რეკომენდაცია</value>
+  </data>
+  <data name="Dashboard.AdviceTransfer" xml:space="preserve">
+    <value>გადაიტანეთ საწყობიდან</value>
+  </data>
+  <data name="Dashboard.AdviceReorder" xml:space="preserve">
+    <value>შეუკვეთეთ მომწოდებელს</value>
+  </data>
+  <data name="Dashboard.NoSales" xml:space="preserve">
+    <value>ბოლო 7 დღეში გაყიდვები არ ყოფილა.</value>
+  </data>
+  <data name="Dashboard.EmployeesCaption" xml:space="preserve">
+    <value>{0} პოზიცია · {1} ღია განაცხადი</value>
+  </data>
+  <data name="Dashboard.PayrollCaption" xml:space="preserve">
+    <value>საშუალო ხელფასი {0}</value>
+  </data>
+  <data name="Dashboard.RevenueCaption" xml:space="preserve">
+    <value>{0} მომხმარებელი</value>
+  </data>
+  <data name="Dashboard.StockCaption" xml:space="preserve">
+    <value>{0} პროდუქტი · იწურება {1}</value>
+  </data>
+  <data name="Field.PersonalId" xml:space="preserve">
+    <value>პირადი ნომერი</value>
+  </data>
+  <data name="Field.FirstName" xml:space="preserve">
+    <value>სახელი</value>
+  </data>
+  <data name="Field.LastName" xml:space="preserve">
+    <value>გვარი</value>
+  </data>
+  <data name="Field.FullName" xml:space="preserve">
+    <value>სახელი და გვარი</value>
+  </data>
+  <data name="Field.BirthDate" xml:space="preserve">
+    <value>დაბადების თარიღი</value>
+  </data>
+  <data name="Field.Address" xml:space="preserve">
+    <value>მისამართი</value>
+  </data>
+  <data name="Field.Phone" xml:space="preserve">
+    <value>ტელეფონის ნომერი</value>
+  </data>
+  <data name="Field.Email" xml:space="preserve">
+    <value>ელ-ფოსტა</value>
+  </data>
+  <data name="Field.MaritalStatus" xml:space="preserve">
+    <value>ოჯახური მდგომარეობა</value>
+  </data>
+  <data name="Field.PositionId" xml:space="preserve">
+    <value>თანამდებობა</value>
+  </data>
+  <data name="Field.Salary" xml:space="preserve">
+    <value>ხელფასი</value>
+  </data>
+  <data name="Field.Name" xml:space="preserve">
+    <value>პროდუქტის დასახელება</value>
+  </data>
+  <data name="Field.Manufacturer" xml:space="preserve">
+    <value>მწარმოებელი</value>
+  </data>
+  <data name="Field.ReleaseYear" xml:space="preserve">
+    <value>წელი</value>
+  </data>
+  <data name="Field.Price" xml:space="preserve">
+    <value>ფასი</value>
+  </data>
+  <data name="Field.WarehouseStock" xml:space="preserve">
+    <value>საწყობში</value>
+  </data>
+  <data name="Field.StoreStock" xml:space="preserve">
+    <value>მაღაზიაში</value>
+  </data>
+  <data name="Field.MotivationLetter" xml:space="preserve">
+    <value>სამოტივაციო წერილი</value>
+  </data>
+  <data name="Field.PasswordHash" xml:space="preserve">
+    <value>პაროლი</value>
+  </data>
+  <data name="Field.Role" xml:space="preserve">
+    <value>როლი</value>
+  </data>
+  <data name="Field.Quantity" xml:space="preserve">
+    <value>რაოდენობა</value>
+  </data>
+  <data name="Field.ProductId" xml:space="preserve">
+    <value>პროდუქტი</value>
+  </data>
+  <data name="Field.CustomerPersonalId" xml:space="preserve">
+    <value>მომხმარებელი</value>
+  </data>
+  <data name="Field.Status" xml:space="preserve">
+    <value>სტატუსი</value>
+  </data>
+  <data name="Field.SubmittedAt" xml:space="preserve">
+    <value>გამოგზავნის თარიღი</value>
+  </data>
+  <data name="Field.PlacedAt" xml:space="preserve">
+    <value>თარიღი</value>
+  </data>
+  <data name="Field.UnitPrice" xml:space="preserve">
+    <value>ერთეულის ფასი</value>
+  </data>
+  <data name="Field.Total" xml:space="preserve">
+    <value>ჯამი</value>
+  </data>
+  <data name="Role.Administrator" xml:space="preserve">
+    <value>ადმინისტრატორი</value>
+  </data>
+  <data name="Role.Manager" xml:space="preserve">
+    <value>მენეჯერი</value>
+  </data>
+  <data name="Role.WarehouseOperator" xml:space="preserve">
+    <value>საწყობის ოპერატორი</value>
+  </data>
+  <data name="Role.SalesAssociate" xml:space="preserve">
+    <value>გამყიდველი</value>
+  </data>
+  <data name="MaritalStatus.Single" xml:space="preserve">
+    <value>დასაოჯახებელი</value>
+  </data>
+  <data name="MaritalStatus.Married" xml:space="preserve">
+    <value>დაოჯახებული</value>
+  </data>
+  <data name="MaritalStatus.Divorced" xml:space="preserve">
+    <value>განქორწინებული</value>
+  </data>
+  <data name="MaritalStatus.Widowed" xml:space="preserve">
+    <value>ქვრივი</value>
+  </data>
+  <data name="ApplicationStatus.New" xml:space="preserve">
+    <value>ახალი</value>
+  </data>
+  <data name="ApplicationStatus.Interview" xml:space="preserve">
+    <value>გასაუბრება</value>
+  </data>
+  <data name="ApplicationStatus.Hired" xml:space="preserve">
+    <value>აყვანილია</value>
+  </data>
+  <data name="ApplicationStatus.Rejected" xml:space="preserve">
+    <value>უარყოფილია</value>
+  </data>
+  <data name="Error.Required" xml:space="preserve">
+    <value>ველი „{0}“ სავალდებულოა.</value>
+  </data>
+  <data name="Error.TooLong" xml:space="preserve">
+    <value>„{0}“ არ უნდა აღემატებოდეს {1} სიმბოლოს.</value>
+  </data>
+  <data name="Error.InvalidEmail" xml:space="preserve">
+    <value>შეიყვანეთ სწორი ელ-ფოსტა.</value>
+  </data>
+  <data name="Error.InvalidPersonalId" xml:space="preserve">
+    <value>პირადი ნომერი უნდა შედგებოდეს 11 ციფრისგან.</value>
+  </data>
+  <data name="Error.InvalidPhone" xml:space="preserve">
+    <value>შეიყვანეთ სწორი ტელეფონის ნომერი.</value>
+  </data>
+  <data name="Error.InvalidBirthDate" xml:space="preserve">
+    <value>„{0}“ დასაშვებ ფარგლებს სცდება.</value>
+  </data>
+  <data name="Error.InvalidYear" xml:space="preserve">
+    <value>შეიყვანეთ წელი 1970-დან მომდევნო წლამდე.</value>
+  </data>
+  <data name="Error.MustNotBeNegative" xml:space="preserve">
+    <value>„{0}“ არ შეიძლება იყოს უარყოფითი.</value>
+  </data>
+  <data name="Error.MustBePositive" xml:space="preserve">
+    <value>„{0}“ უნდა იყოს ნულზე მეტი.</value>
+  </data>
+  <data name="Error.WeakPassword" xml:space="preserve">
+    <value>გამოიყენეთ მინიმუმ {1} სიმბოლო, ასო და ციფრი.</value>
+  </data>
+  <data name="Error.InvalidCredentials" xml:space="preserve">
+    <value>ელ-ფოსტა ან პაროლი არასწორია!</value>
+  </data>
+  <data name="Error.NotFound" xml:space="preserve">
+    <value>ჩანაწერი ვერ მოიძებნა. შესაძლოა ის წაშლილია.</value>
+  </data>
+  <data name="Error.Duplicate" xml:space="preserve">
+    <value>„{0}“ უკვე გამოყენებულია.</value>
+  </data>
+  <data name="Error.InUse" xml:space="preserve">
+    <value>ჩანაწერს უკავშირდება გაყიდვები და მისი წაშლა შეუძლებელია.</value>
+  </data>
+  <data name="Error.LastAdministrator" xml:space="preserve">
+    <value>სისტემაში უნდა დარჩეს მინიმუმ ერთი ადმინისტრატორი.</value>
+  </data>
+  <data name="Error.CannotDeleteSelf" xml:space="preserve">
+    <value>საკუთარი ანგარიშის წაშლა შეუძლებელია.</value>
+  </data>
+  <data name="Error.InsufficientStock" xml:space="preserve">
+    <value>ხელმისაწვდომია მხოლოდ {1} ერთეული.</value>
+  </data>
+</root>

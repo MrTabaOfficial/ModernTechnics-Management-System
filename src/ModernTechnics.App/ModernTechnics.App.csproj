@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>ModernTechnics</AssemblyName>
+    <RootNamespace>ModernTechnics.App</RootNamespace>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ApplicationVisualStyles>true</ApplicationVisualStyles>
+    <ApplicationUseCompatibleTextRendering>false</ApplicationUseCompatibleTextRendering>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- The UI is built in code, so designer serialisation hints on control properties do not apply. -->
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ModernTechnics.Infrastructure\ModernTechnics.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\app.ico" LogicalName="app.ico" />
+    <!-- Keep Georgian in the main assembly instead of a satellite DLL: one file to ship,
+         and nothing for application-control policies to block at load time. -->
+    <EmbeddedResource Update="Localization\Strings.ka.resx" WithCulture="false" />
+  </ItemGroup>
+
+</Project>
