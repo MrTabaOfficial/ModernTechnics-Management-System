@@ -5,6 +5,8 @@
 ![Windows Forms](https://img.shields.io/badge/UI-Windows%20Forms-0078D4)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
+**English** · [ქართული](README.ka.md)
+
 A desktop back-office for an electronics store: staff, payroll, hiring, warehouse stock, shop-floor sales and
 role-based access, in English and Georgian.
 
@@ -104,10 +106,61 @@ flowchart LR
 | `ModernTechnics.App` | The Windows Forms client: custom-drawn controls, pages, dialogs and localisation. |
 | `ModernTechnics.Tests` | Tests for the three projects above. |
 
-Stack: C# 14 on .NET 10, Windows Forms, Entity Framework Core 10 with SQLite,
-Microsoft.Extensions.DependencyInjection, xUnit v3 and GitHub Actions.
+## Technologies used
 
-### Decisions worth knowing about
+| Area | Technology | Used for |
+| --- | --- | --- |
+| Language | C# 14 | Everything; nullable reference types and warnings-as-errors are on |
+| Runtime | .NET 10 | Target framework of all four projects |
+| UI | Windows Forms | Windows, dialogs and the grid |
+| UI | GDI+ (`System.Drawing`) | Custom-drawn buttons, cards, inputs, charts and the logo |
+| UI | Segoe Fluent Icons / Segoe MDL2 Assets | Icons, as a font that ships with Windows |
+| Data | Entity Framework Core 10 | Mapping, queries and migrations |
+| Data | SQLite (`Microsoft.Data.Sqlite`) | The local database file |
+| Composition | Microsoft.Extensions.DependencyInjection | Wiring services into pages |
+| Security | PBKDF2-HMAC-SHA256 (`System.Security.Cryptography`) | Password hashing |
+| Localisation | `.resx` resources | English and Georgian string tables |
+| Testing | xUnit v3, Microsoft.NET.Test.Sdk | Unit and integration tests |
+| Tooling | GitHub Actions | Build, test and publish on every push |
+| Tooling | Central Package Management, `.editorconfig`, `global.json` | One place for versions, style and the SDK |
+
+## Tech tree
+
+```text
+ModernTechnics
+├── Language and runtime
+│   ├── C# 14
+│   └── .NET 10
+├── Desktop client            (ModernTechnics.App)
+│   ├── Windows Forms
+│   ├── GDI+ custom-drawn controls
+│   │   ├── AppButton, Card, FieldHost, NavButton, Toast
+│   │   └── BarChart, RankChart, StatCard
+│   ├── Segoe Fluent Icons
+│   ├── .resx localisation
+│   │   ├── English
+│   │   └── Georgian
+│   └── Microsoft.Extensions.DependencyInjection
+├── Application services      (ModernTechnics.Infrastructure)
+│   ├── Entity Framework Core 10
+│   │   ├── SQLite provider
+│   │   └── Migrations
+│   └── PBKDF2-HMAC-SHA256 password hashing
+├── Domain                    (ModernTechnics.Core)
+│   ├── Entities
+│   ├── Validation rules
+│   ├── Result and error codes
+│   └── Role-based access policy
+├── Tests                     (ModernTechnics.Tests)
+│   ├── xUnit v3
+│   └── In-memory SQLite
+└── Tooling
+    ├── GitHub Actions
+    ├── Central Package Management
+    └── .editorconfig, global.json
+```
+
+## Decisions worth knowing about
 
 - **Failures are values.** Services return `Result` with error codes instead of throwing for things like a
   duplicate email. The client turns each code into a message in the active language and places it under the
