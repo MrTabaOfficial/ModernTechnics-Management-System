@@ -1,6 +1,6 @@
 # ModernTechnics
 
-[![CI](https://github.com/MrTabaOfficial/C-Project/actions/workflows/ci.yml/badge.svg)](https://github.com/MrTabaOfficial/C-Project/actions/workflows/ci.yml)
+[![CI](https://github.com/MrTabaOfficial/ModernTechnics-Management-System/actions/workflows/ci.yml/badge.svg)](https://github.com/MrTabaOfficial/ModernTechnics-Management-System/actions/workflows/ci.yml)
 ![.NET 10](https://img.shields.io/badge/.NET-10-512BD4)
 ![Windows Forms](https://img.shields.io/badge/UI-Windows%20Forms-0078D4)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
@@ -53,8 +53,8 @@
 საჭიროა: Windows 10 ან 11 და [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0).
 
 ```powershell
-git clone https://github.com/MrTabaOfficial/C-Project.git
-cd C-Project
+git clone https://github.com/MrTabaOfficial/ModernTechnics-Management-System.git
+cd ModernTechnics-Management-System
 dotnet run --project src/ModernTechnics.App
 ```
 
@@ -133,7 +133,7 @@ flowchart LR
 ## პროექტის ხე (Tech tree)
 
 ```text
-C-Project/
+ModernTechnics-Management-System/
 ├── .github/workflows/ci.yml            # აწყობა, ტესტირება და გამოქვეყნება ყოველ push-ზე
 ├── docs/screenshots/                   # პროგრამის მიერ შექმნილი სურათები
 ├── src/
