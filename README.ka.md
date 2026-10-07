@@ -130,40 +130,50 @@ flowchart LR
 | ინსტრუმენტები | GitHub Actions | აწყობა, ტესტირება და გამოქვეყნება ყოველ push-ზე |
 | ინსტრუმენტები | Central Package Management, `.editorconfig`, `global.json` | ვერსიების, სტილისა და SDK-ის ერთიანი მართვა |
 
-## ტექნოლოგიების ხე
+## პროექტის ხე (Tech tree)
 
 ```text
-ModernTechnics
-├── ენა და გარემო
-│   ├── C# 14
-│   └── .NET 10
-├── დესკტოპ კლიენტი            (ModernTechnics.App)
-│   ├── Windows Forms
-│   ├── GDI+ — კოდით დახატული კონტროლები
-│   │   ├── AppButton, Card, FieldHost, NavButton, Toast
-│   │   └── BarChart, RankChart, StatCard
-│   ├── Segoe Fluent Icons
-│   ├── .resx ლოკალიზაცია
-│   │   ├── ინგლისური
-│   │   └── ქართული
-│   └── Microsoft.Extensions.DependencyInjection
-├── სერვისები                  (ModernTechnics.Infrastructure)
-│   ├── Entity Framework Core 10
-│   │   ├── SQLite პროვაიდერი
-│   │   └── მიგრაციები
-│   └── PBKDF2-HMAC-SHA256 პაროლების ჰეშირება
-├── დომენი                     (ModernTechnics.Core)
-│   ├── ენტიტები
-│   ├── ვალიდაციის წესები
-│   ├── Result და შეცდომის კოდები
-│   └── როლებზე დაფუძნებული წვდომის წესები
-├── ტესტები                    (ModernTechnics.Tests)
-│   ├── xUnit v3
-│   └── SQLite მეხსიერებაში
-└── ინსტრუმენტები
-    ├── GitHub Actions
-    ├── Central Package Management
-    └── .editorconfig, global.json
+C-Project/
+├── .github/workflows/ci.yml            # აწყობა, ტესტირება და გამოქვეყნება ყოველ push-ზე
+├── docs/screenshots/                   # პროგრამის მიერ შექმნილი სურათები
+├── src/
+│   ├── ModernTechnics.Core/            # დომენი, გარე დამოკიდებულებების გარეშე
+│   │   ├── Common/                     # Result, Error და შეცდომის კოდები
+│   │   ├── Domain/                     # Employee, Customer, Product, Order, …
+│   │   ├── Security/                   # AccessPolicy, IPasswordHasher
+│   │   ├── Services/                   # სერვისების კონტრაქტები, DashboardSummary
+│   │   └── Validation/                 # Validator, EntityValidators
+│   ├── ModernTechnics.Infrastructure/  # მონაცემებთან წვდომა და სერვისები
+│   │   ├── Data/                       # AppDbContext, DemoData, DatabaseInitializer
+│   │   │   └── Migrations/             # EF Core სქემის მიგრაციები
+│   │   ├── Security/                   # Pbkdf2PasswordHasher
+│   │   ├── Services/                   # Auth, User, Employee, Customer, Inventory, Sales, …
+│   │   └── DependencyInjection.cs      # AddModernTechnics() რეგისტრაცია
+│   └── ModernTechnics.App/             # Windows Forms კლიენტი
+│       ├── Assets/                     # app.ico
+│       ├── Controls/                   # AppButton, AppGrid, Card, Charts, FieldHost, Toast, …
+│       ├── Forms/                      # LoginForm, MainForm, FormDialog
+│       ├── Localization/               # L.cs, Strings.resx, Strings.ka.resx
+│       ├── Pages/                      # ListPage<T> და თითო გვერდი თითო მოდულისთვის
+│       ├── Ui/                         # Theme, Draw, Brand, Shell
+│       ├── AppSettings.cs              # მონაცემების საქაღალდე და შენახული პარამეტრები
+│       ├── Program.cs                  # საწყისი წერტილი
+│       └── ScreenshotRunner.cs         # --screenshots რეჟიმი
+├── tests/
+│   └── ModernTechnics.Tests/
+│       ├── Localization/               # ტექსტების ცხრილების შემოწმება
+│       ├── Security/                   # პაროლების ჰეშირება, წვდომის წესები
+│       ├── Services/                   # ავტორიზაცია, პერსონალი, მარაგი და გაყიდვები
+│       ├── Support/                    # სატესტო SQLite ბაზა მეხსიერებაში
+│       └── Validation/                 # ვალიდაციის წესები
+├── .editorconfig                       # კოდის სტილი
+├── Directory.Build.props               # კომპილატორის საერთო პარამეტრები
+├── Directory.Packages.props            # NuGet ვერსიები ერთ ადგილას
+├── global.json                         # დაფიქსირებული .NET SDK
+├── ModernTechnics.slnx                 # სოლუშენი
+├── README.md
+├── README.ka.md
+└── LICENSE
 ```
 
 ## მნიშვნელოვანი გადაწყვეტილებები
